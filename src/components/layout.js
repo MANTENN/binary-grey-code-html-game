@@ -34,12 +34,21 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <footer>
+        <div className="container mx-auto" style={{ maxWidth: "960px" }}>
+          <span className={"flex"}>© {new Date().getFullYear()}</span>
+          <span className={"flex"}>
+            {` `}
+            <a
+              className={"text-decoration-none"}
+              href="https://twitter.com/mantennn"
+            >
+              Built with ♥ in California.
+            </a>
+          </span>
+        </div>
+      </footer>
     </>
   )
 }
